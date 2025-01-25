@@ -22,7 +22,9 @@ func main() {
 }
 
 func hasCycle(head *ListNode) bool {
-	slow, fast := head, head
+	var slow *ListNode
+	var fast *ListNode
+	slow, fast = head, head
 	for fast != nil && fast.Next != nil {
 		slow = slow.Next
 		fast = fast.Next.Next
