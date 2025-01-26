@@ -5,7 +5,7 @@ package main
 import "fmt"
 
 func main() {
-	n := 10
+	n := 5
 	result := fibo(n)
 	fmt.Println(result)
 }
